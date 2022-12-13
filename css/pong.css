@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    background-image: url('../images/texture.png');
+    background-repeat: repeat;
+    /* this is to avoid a glitch where the side of a ball slightly 
+    passes the width or height of the window, when it does, the browser draws scrollbarrs 
+    when that happens. By setting the overflow to hidden it prevents drawing those scroll bars… 
+    but you knew that already of course ;-) 
+
+
+    of course...*/
+}
+
+p {
+    font-size: large;
+}
+
+.vertical_middle {
+    border-left: 6px solid rgb(222, 222, 222);
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    z-index: 100;
+}
+
+.vertical_left {
+    border-left: 2px solid white;
+    height: 100%;
+    position: absolute;
+    left: 60px;
+    z-index: 100;
+}
+
+.vertical_right {
+    border-left: 2px solid white;
+    height: 100%;
+    position: absolute;
+    right: 60px;
+    z-index: 100;
+}
+
+.ball {
+    border-radius: 100%;
+    /*makes it completely circular*/
+    border: 2px solid black;
+    position: absolute;
+    z-index: 2000;
+    /*An element with position: absolute; is positioned relative to the nearest positioned ancestor*/
+}
+
+.paddle {
+    border-radius: 20px;
+    /*border: 2px solid rgb(255, 255, 255);*/
+    position: absolute;
+}
+
+.paddle2 {
+    border-radius: 20px;
+    border: 2px solid rgb(255, 254, 254);
+    position: absolute;
+}
+
+#usergamecontent {
+    position: fixed;
+    width: 50%;
+    left: 65px;
+    bottom: 0.2%;
+    opacity: 0.5;
+    color: white;
+    z-index: 1000;
+    font-size: 2em;
+    text-align: center;
+}
+
+#comgamecontent {
+    position: fixed;
+    width: 50%;
+    right: 0%;
+    bottom: 0.2%;
+    opacity: 0.5;
+    color: white;
+    z-index: 1000;
+    font-size: 2em;
+    text-align: center;
+}
+
+#scorecontent,
+#scorecontent p,
+#highscorecontent,
+#highscorecontent p {
+    position: fixed;
+    width: 39%;
+    left: 10%;
+    opacity: 0.7;
+    color: aquamarine;
+    z-index: 1000;
+    font-size: 2em;
+    text-align: right;
+    display: inline-block;
+    height: 5%;
+}
+
+#scorecontent,
+#scorecontent p {
+    top: 0.2%;
+}
+
+#highscorecontent {
+    bottom: 0.2%;
+    display: inline-block;
+}
+
+#high_score,
+#currentscore {
+    display: inline-block;
+}
+
+#title_logo {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#instructions {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#instructions a {
+    color: aqua;
+    font-family: 'Courier New', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    text-decoration: none;
+    font-size: 3em;
+}
+
+#instructions p {
+    font-family: 'Courier New', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+#userlives {
+    position: fixed;
+    top: 2%;
+    left: 65px;
+    width: 40%;
+    /*below code to center*/
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+}
+
+#comlives {
+    position: fixed;
+    top: 2%;
+    left: 51%;
+    width: 40%;
+    /*below code to center*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+}
+
+img {
+    width: 4%;
+}
+
+#usergamecontent img,
+#comgamecontent img {
+    width: 10%;
+}
+
+#sound_controls {
+    opacity: 0.3;
+    top: 0.2%;
+    right: 70px;
+    position: fixed;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#sound_controls p {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*
+NOT IN CURRENT USE
+
+
+#enable_sound {
+    left: 10%;
+    bottom: 0;
+    z-index: 1000000;
+    margin: 5px;
+    padding: 9px;
+    width: 10%;
+    position: absolute;
+    font-size: large;
+    border-radius: 30px;
+    opacity: 0.9;
+    color: blue;
+    background-color: white;
+    text-align: center;
+    font-family: 'Courier New', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}*/
