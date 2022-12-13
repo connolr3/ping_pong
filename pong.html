@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pong!</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/pong.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/pong.js"></script>
+</head>
+
+<body>
+    <!--Sound from freesound.ord-->
+    <audio id="pop">
+        <source src="audio/pop.mp3" type="audio/mp3">
+      </audio>
+    <audio id="thud">
+        <source src="audio/thud.wav" type="audio/wav">
+      </audio>
+    <audio id="death">
+        <source src="audio/death.wav" type="audio/wav">
+      </audio>
+    <audio id="woosh">
+        <source src="audio/woosh.flac" type="audio/flac">
+      </audio>
+    <audio id="win">
+        <source src="audio/win.wav" type="audio/wav">
+      </audio>
+    <audio id="lose">
+        <source src="audio/lose.wav" type="audio/wav">
+      </audio>
+    <audio id="bang">
+        <source src="audio/bang.mp3" type="audio/mp3">
+      </audio>
+
+    <!--This sound from zapsplat.com
+link - https://www.zapsplat.com/?s=astro&post_type=music&sound-effect-category-id=
+ -->
+    <audio id="soundtrack">
+        <source src="audio/soundtrack.mp3" type="audio/mp3">
+      </audio>
+
+
+
+
+
+
+    <!--Lines are for decorative pruposes-->
+    <div class="vertical_middle"></div>
+    <div class="vertical_left"></div>
+    <div class="vertical_right"></div>
+
+    <!--Holds life images-->
+    <div id="userlives"> </div>
+    <div id="comlives"> </div>
+
+    <!--Holds number of past wins-->
+    <div id="usergamecontent">
+        <img src="images/trophy.png" alt="trophy icon">
+        <div id="user_storage_wins">__</div>
+    </div>
+    <div id="comgamecontent">
+        <img src="images/trophy.png" alt="trophy icon">
+        <p id="com_storage_wins">__</p>
+    </div>
+
+    <!--high score content-->
+    <div id="highscorecontent">
+        High-Score:
+        <div id="high_score">__</div>
+    </div>
+
+
+
+    <!-- score content-->
+    <div id="scorecontent">
+        Score:
+        <div id="currentscore">__</div>
+    </div>
+
+
+    <div id="sound_controls">
+
+        <audio autoplay controls loop>
+        <source src="audio/soundtrack.mp3"></source>
+      </audio>
+        <p>Soundtrack Controls!</p>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

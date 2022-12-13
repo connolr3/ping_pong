@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce</title>
+    <link rel="stylesheet" type="text/css" href="css/pongtitle.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/pongtitle.js"></script>
+</head>
+
+<body>
+    <!--onclick="window.location.href='pong.html'"-->
+
+    <div id="logocontent"> <img src="images/PONG.png" alt="" id="title_logo"></div>
+
+    <div id="maincontent">
+        <div id="instructions">
+
+            <p>This is a one player game! The speed of the ball increases as you play. You control the paddle using the mouse. You must hit the ball with the paddle.<br><br> Your lives are <b>displayed on screen!</b> </p>
+            <p>You play against a COM to and recieve a score. Try to get your personal best!</p>
+            <a href="https://github.com/connolr3/ping_pong">Github</a>
+        </div>
+
+        <div id="choose_colour">
+            <form>
+                <p>Choose a Level!</p>
+                <input type="radio" id="easy" name="level" value="easy" checked="checked">
+                <label for="easy" id="easy">Easy</label><br>
+                <input type="radio" id="medium" name="level" value="medium">
+                <label for="medium">Medium</label><br>
+                <input type="radio" id="hard" name="level" value="hard">
+                <label for="hard">Hard</label>
+
+
+                <p>Choose your colour!</p>
+                <input type="radio" id="red" name="colour" value="red" checked="checked">
+                <label for="red">Red</label><br>
+                <input type="radio" id="blue" name="colour" value="blue">
+                <label for="blue">Blue</label><br>
+                <br>
+                <Br>
+                <a id="submit">Play!</a>
+
+            </form>
+        </div>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
